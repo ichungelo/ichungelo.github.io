@@ -37,10 +37,22 @@ button {
 }
 
 button:hover {
-    color: black;
-    background-color: white;
-    border-radius: 10px;
+    animation-name: background-transition;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
 
+@keyframes background-transition {
+    0% {
+        color: #1241ad;
+        border-radius: 20px;
+    }
+    100% {
+        color: #1241ad;
+        background-color: white;
+        border-radius: 10px;
+    }
 }
 
 nav {
@@ -48,24 +60,24 @@ nav {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    padding: 20px;
-    background-color: rgb(18, 65, 173);
-    box-shadow: 0px 2px 5px;
+    padding: 20px 0;
+    background: linear-gradient(-90deg, #128ead, #3112ad);
+    box-shadow: 0 0 5px;
 }
 
 .flex-header-right {
-    flex: 245px;
+    flex: auto;
     text-align: center;
 }
 
 .flex-header-left {
+    padding-left: 20px;
     flex: 70%;
     align-self: center;
-    padding-left: 25px;
 }
 
 main {
-    padding: 20px;
+    padding: 0 20px;
     background-image: url(/assets/images/background.jpg);
     background-size: cover;
 }
@@ -104,7 +116,7 @@ main {
 }
 
 .about-description {
-    margin: 30px 20%;
+    margin: 30px 10%;
     text-align: center;
 }
 
@@ -112,13 +124,24 @@ main {
     width: 100px;
     height: 100px;
     margin: 30px;
-    background-color: rgba(255, 255, 255, 0.486);
-    border-radius: 20%;
-    box-shadow: 3px 3px 5px grey;
 }
 
 .about-social-icon:hover {
-    background-color: rgba(189, 189, 189, 0.212);
+    animation-name: social-account-transition;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes social-account-transition {
+    0% {
+        background-color: white;
+        border-radius: 20%;
+    }
+    100% {
+        background-color: white;
+        border-radius: 20%;
+        box-shadow: 3px 3px 6px rgb(56, 56, 56);
+    }
 }
 
 footer {
@@ -152,6 +175,6 @@ footer {
     width: 14px;
 }
 
-#about, #social {
+#about, #social, #project {
     padding-top: 100px;
 }
