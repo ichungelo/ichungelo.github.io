@@ -1,74 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/assets/images/ichun.png" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+    <title>Home</title>
     <link rel="stylesheet" href="style.css">
-    <title>Biodata</title>
+    <link rel="shortcut icon" href="/assets/ichun.png">
 </head>
+
 <body>
-    <nav>
-        <div class="flex-header-left">
-            <h1><img src="/assets/images/ichungo-logo.png" alt="logo" width="42px"> Biodata</h1>
-        </div>
-        <div class="flex-header-right">
-            <a href="#about"><button>About</button></a>
-            <a href="#project"><button>Project</button></a>
-            <a href="#social"><button>Social</button></a>
-            <a href="#contact"><button>Contact</button></a>
-        </div>
-    </nav>
+
+    <header>
+        <nav>
+            <img src="assets/ichun.png" alt="ichun logo" width="50">
+            <ul class="nav-right">
+                <li><a href="/"><button class="button-navbar-selected">Home</button></a></li>
+                <li><a href="aboutme"><button class="button-navbar">About Me</button></a></li>
+            </ul>
+        </nav>
+    </header>
+
     <main>
-        <div id="about">
-            <h2 class="about-header">Hi,<br> I'm Krisna Satriadi</h2>
-            <div class="about-content">
-                <img class="about-photo" src="/assets/images/782349.jpg" alt="portfolio-photo">
-                <div class="about-biodata">
-                    <p>D III Aeronautical Engineering</p>
-                    <p>Aircraft Technician</p>
-                    <p>Android Apprentice</p>
-                    <p>Web Apprentice</p>
-                    <p>Programming Enthusiast</p>
+        <div class="side-scroll" id="contentList"></div>
+        <div class="content-article" id="contentArticle">
+            <content>
+                <h1 style="
+                margin: 20px;
+                font-family: Mooli, sans-serif;
+                color: #00aeb4;
+                ">
+                    Golang
+                </h1>
+                <div style="
+                border: rgb(214, 214, 214);
+                border-style: solid;
+                border-width: 1px;
+                padding: 20px;
+                border-radius: 20px;
+                margin: 10px;
+                ">
+                    <h2 style="
+                    padding: 10px;
+                    color: #00aeb4;
+                    ">
+                        Description
+                    </h2>
+                    <p style="
+                    text-align: justify;
+                    ">
+                        Go is a statically typed, compiled high-level programming language
+                        designed at Google by Robert
+                        Griesemer, Rob Pike, and Ken Thompson. It is syntactically similar to C, but also has memory
+                        safety,
+                        garbage collection, structural typing, and CSP-style concurrency. It is often referred to as
+                        Golang
+                        because of its former domain name, golang.org, but its proper name is Go.
+                    </p>
                 </div>
-            </div>
-            <div class="about-description">
-                <p>5 years experienced as Aircraft Maintenance Technician on Indonesia Airasia, a multinational company and one of the best Low Cost Carrier. Learn programming in free time. Write Android native in Kotlin also trying to learn web programming.</p>
-            </div>
+                <div style="border: rgb(214, 214, 214);
+                border-style: solid;
+                border-width: 1px;
+                padding: 20px;
+                border-radius: 20px;
+                margin: 10px;
+                ">
+                    <h2 style="
+                    padding: 10px;
+                    color: #00aeb4;
+                    ">
+                        Code Example
+                    </h2>
+                    <pre>
+
+package main
+    
+import "fmt"
+                        
+func main() {
+fmt.Println("Hello World")
+}
+
+                    </pre>
+                </div>
+            </content>
         </div>
-        <div id="project">
-            <h2 class="about-header">Project Gallery</h2>
-            <div class="about-content">
-                <img src="" alt="">
-                <p class="about-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente suscipit debitis officiis blanditiis adipisci esse dolore nam error quasi eius. Non repudiandae facilis fuga accusamus minima, nisi consectetur. Ex libero sunt eveniet odio ad. Nostrum, molestias consectetur temporibus cumque velit, vel fuga obcaecati libero autem neque dolorum quisquam at animi repellendus dolore, veniam reprehenderit. Dicta dignissimos recusandae modi in id delectus facilis rem accusamus eaque natus. Omnis obcaecati iure deleniti sequi quas repellendus ducimus odit itaque totam fuga error voluptates aperiam natus dignissimos possimus illo labore officiis enim, ratione corporis similique. Rem praesentium consectetur assumenda ullam sapiente laboriosam. A saepe quis, nihil doloremque optio dolorem necessitatibus quasi libero placeat vitae cumque non laudantium deserunt nobis molestias, sapiente praesentium sed natus vel veritatis esse et minima incidunt! Quam enim, vel cum ducimus quo quibusdam soluta. Aut odio tenetur delectus quidem ullam voluptatibus, tempore non, voluptatum vel temporibus, iure est atque blanditiis consequuntur eos excepturi sint repellat. Aliquam praesentium vero nostrum excepturi voluptatibus, quam eligendi recusandae error dolorum, tempora distinctio eius explicabo soluta? Repudiandae, doloremque. Illo et nemo ducimus culpa, excepturi possimus expedita dignissimos architecto vero voluptatibus tenetur blanditiis inventore, modi aliquam labore assumenda vel deleniti illum quis ea id minus! Obcaecati?</p>
-            </div>
-        </div>
-        <div id="social">
-            <h2 class="about-header">Catch me on social media</h2>
-            <div class="about-content">
-                <a href="https://web.facebook.com/ichungelo/" target="_blank"><img class="about-social-icon" src="/assets/images/tabler-icon-brand-facebook.png" alt="facebook-icon"></a>
-                <a href="https://twitter.com/ichungelo" target="_blank"><img class="about-social-icon" src="/assets/images/tabler-icon-brand-twitter.png" alt="twitter-icon"></a>
-                <a href="https://www.instagram.com/ichungelo/" target="_blank"><img class="about-social-icon" src="/assets/images/tabler-icon-brand-instagram.png" alt="instagram-icon"></a>
-                <a href="https://www.linkedin.com/in/krisna-satriadi-544aa9111/" target="_blank"><img class="about-social-icon" src="/assets/images/tabler-icon-brand-linkedin.png" alt="linkedin-icon"></a>
-                <a href="https://github.com/ichungelo" target="_blank"><img class="about-social-icon" src="/assets/images/tabler-icon-brand-github.png" alt="github-icon"></a>
-                <a href="https://api.whatsapp.com/send?phone=628998740995&text=Hi" target="_blank"><img class="about-social-icon" src="/assets/images/tabler-icon-brand-whatsapp.png" alt="wa-icon"></a>
-            </div>
-        </div>
+        <aside id="contentAside">
+            <img style="margin: 20px;" src="assets/icons/go.svg" alt="golang logo" width="180px">
+        </aside>
     </main>
-    <footer id="contact">
-        <div>
-            <h2>Contact Me</h2>
+
+    <footer>
+        <div class="footer-left">
+            <img src="assets/ichun.png" alt="ichun logo" width="30px">
+            <p style="color: white;">
+                Copyright © Ichungelo inc 2023, All rights reserved
+            </p>
         </div>
-        <div class="flex-footer-content">
-            <h3>Phone</h3>
-            <a href="tel:+628998740995"><button>+62899 8740 995</button></a>
-            <h3>Mail</h3>
-            <a href="mailto:krisna.s.362@gmail.com"><button>krisna.s.362@gmail.com</button></a>
+        <div class="footer-right">
+            <p style="color: white;">Contact Me</p>
+            <a target="_blank" href="https://www.linkedin.com/in/krisna-satriadi-544aa9111/"><img
+                    src="assets/linkedin.svg" alt="linkedin account" width="40px"></a>
+            <a target="_blank" href="https://github.com/ichungelo"><img src="assets/octocat.svg" alt="github account"
+                    width="40px"></a>
         </div>
     </footer>
-    <div class="footer-end">
-        <p><img src="/assets/images/ichungo-logo.png" alt="ichungelo-logo"> Copyright &#169 Ichungelo inc 2021, All rights reserved</p>
-    </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
